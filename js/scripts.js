@@ -11,9 +11,14 @@ var convertToPigLatin = function(txt) {
       for(i=0;i<txt.length;i++) {
         if (consonants.includes(txt[i])) {
         } else {
+          var modify = i;
+          if (txt[i] === "u" && txt[i-1] === "q") {
+            modify = i+1;
+          }
 
-          var first = txt.substr(0,i);
-          var rest = txt.substr(i,txt.length);
+
+          var first = txt.substr(0,modify);
+          var rest = txt.substr(modify,txt.length);
 
           output = rest + first + "ay";
           i = txt.length;

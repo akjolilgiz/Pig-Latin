@@ -44,6 +44,10 @@ The program includes the "u" with the first consonants (rule above) if it last l
 Example Input: squeal
 Example Output: ealsquay
 
+The program runs for multi-word txt
+Example Input: Pig Latin translator
+Example Output: igPay atinLay ansalatorTray
+
 
 ## Technologies Used
 
