@@ -1,7 +1,7 @@
 var convertToPigLatin = function(txt) {
   // var vowels = ["a", "e", "i", "o", "u"];
-  var vowels = "aeiou";
-  var consonants = "bcdfghjklmnpqrstvwxyz";
+  var vowels = "aeiouAEIOU";
+  var consonants = "BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz";
   var output = '';
 
 
@@ -36,15 +36,28 @@ var convertToPigLatin = function(txt) {
 
 
 
+var splitWords = function(sentence) {
+  var output = '';
+  var sentences = [];
+  sentences = sentence.split(" ");
+  sentences.forEach(function(word) {
+    output = output + " " + convertToPigLatin(word);
+  });
+
+  return output;
+}
+
+
 
 $(document).ready(function() {
   $("form#txtTranslator").submit(function(event) {
     event.preventDefault();
 
     var userInput = $("input#txt").val();
+    var sentenceOutput = splitWords(userInput);
+    // var sentenceOutput = tojoin.join();
 
-    var output = convertToPigLatin(userInput);
 
-    $("#result").text(output);
+    $("#result").text(sentenceOutput);
   });
 });
