@@ -24,10 +24,6 @@ The program does nothing to non-alphabetical characters, since they do not conta
 Example Input: 3
 Example Output: 3
 
-The the program considers 'y' a consonant
-Example Input: yoga
-Example Output: yoga
-
 The program adds "ay" to single-letter words beginning with a vowel.
 Example Input: i
 Example Output: iay
@@ -39,6 +35,10 @@ Example Output: omeletay
 The program moves first consonants to the end and adds "ay".
 Example Input: champ
 Example Output: ampchay
+
+The the program considers 'y' a consonant
+Example Input: yoga
+Example Output: ogayay
 
 The program includes the "u" with the first consonants (rule above) if it last letter of the consonant group is a "q" to the end and adds "ay".
 Example Input: squeal
