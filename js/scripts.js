@@ -9,8 +9,7 @@ var convertToPigLatin = function(txt) {
       output = txt + "ay";
     } else if (consonants.includes(txt[0])) {
       for(i=0;i<txt.length;i++) {
-        if (consonants.includes(txt[i])) {
-        } else {
+        if (vowels.includes(txt[i])) {
           var modify = i;
           if (txt[i] === "u" && txt[i-1] === "q") {
             modify = i+1;
