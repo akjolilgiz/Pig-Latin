@@ -20,18 +20,30 @@ _None._
 
 akjolilgiz@gmail.com_, nelsonbrian@gmail.com_
 ## Specs
-The program should return when a year is not a leap year.
-Input Example: 1993
-Output Example: false
-The program should return 'true' for years divisible by 4, since those are leap years.
-Input Example: 2004
-Output Example: true
-The program should return 'false' for years divisible by 100, since those are not leap years.
-Input Example: 1900
-Output Example: false
-The program should return 'true' for years divisible by 400, since those are leap years.
-Input Example: 2000
-Output Example: true
+The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels.
+Example Input: 3
+Example Output: 3
+
+The the program considers 'y' a consonant
+Example Input: yoga
+Example Output: yoga
+
+The program adds "ay" to single-letter words beginning with a vowel.
+Example Input: i
+Example Output: iay
+
+The program adds "ay" to multi-letter words beginning with a vowel.
+Example Input: omelet
+Example Output: omeletay
+
+The program moves first consonants to the end and adds "ay".
+Example Input: champ
+Example Output: ampchay
+
+The program includes the "u" with the first consonants (rule above) if it last letter of the consonant group is a "q" to the end and adds "ay".
+Example Input: squeal
+Example Output: ealsquay
+
 
 ## Technologies Used
 
