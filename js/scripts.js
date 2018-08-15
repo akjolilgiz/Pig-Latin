@@ -1,9 +1,8 @@
-var leapYear = function(inputYear) {
-
-  if ((inputYear % 4 === 0) && (inputYear % 100 !== 0) || (inputYear % 400 === 0)) {
-    return true;
+var convertToPigLatin = function(txt) {
+  if (/[^0-9]/gi.test(txt)) {
+    return "is text";
   } else {
-    return false;
+  return txt;
   }
 }
 
@@ -11,17 +10,13 @@ var leapYear = function(inputYear) {
 
 
 $(document).ready(function() {
-  $("form#leap-year").submit(function(event) {
+  $("form#txtTranslator").submit(function(event) {
     event.preventDefault();
 
-    var userInput = $("input#year").val();
+    var userInput = $("input#txt").val();
 
-    var output = leapYear(userInput);
-    if (output === true) {
-      output = "This is a leap year."
-    } else {
-      output = "This is NOT a leap year."
-    }
+    var output = convertToPigLatin(userInput);
+
     $("#result").text(output);
   });
 });
