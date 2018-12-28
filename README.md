@@ -4,10 +4,6 @@
 
 #### By _**Akjol Jaenbai, Brian Nelson**_
 
-## Description
-
-_Create a page that asks the user to input a year to find out whether its a leap year or not._
-
 ## Setup/Installation Requirements
 
 * Open file in a web browser.
